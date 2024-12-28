@@ -1,72 +1,78 @@
-Snake Game
-This repository contains a customizable Snake game built using Python's Turtle graphics library. Players navigate a snake around the screen to collect food, increasing its length and score while avoiding collisions.
+# Snake Game
 
-Features
-Customizable Gameplay: Users can set the colors of the snake head, body, and food, as well as the points earned per food item.
-Real-Time Scoring: The game displays the current score and high score dynamically on the screen.
-Smooth Snake Movement: The snake moves fluidly in response to player controls, with its body following the head.
-Collision Detection: The game ends if the snake collides with the screen boundaries or its own body.
-Increasing Difficulty: The game speeds up as the snake eats more food.
-How It Works
-Game Initialization:
+This repository contains a customizable **Snake Game** built with Python's `turtle` library. The game features user-defined snake and food colors, adjustable scoring per apple, and smooth gameplay mechanics.
 
-The screen is set up with a black background, 600x600 dimensions, and event listeners for keyboard controls.
-Players customize the snake head, body, and food colors, as well as the score increment per food item.
-Player Controls:
+---
 
-Use the WASD keys to move the snake:
-W: Up
-A: Left
-S: Down
-D: Right
-Gameplay Mechanics:
+## Features
 
-The snake starts as a single square and grows with each food consumed.
-Food is repositioned randomly on the screen when eaten.
-The snake body segments follow the head as it moves.
-Scoring:
+### 🎮 Gameplay Mechanics
+- **Classic Snake Movement:** Control the snake using **W**, **A**, **S**, and **D** keys.
+- **Dynamic Scoring:** Customize points earned per food item.
+- **Collision Detection:** Game ends if the snake collides with walls or itself.
 
-The score increases by the user-defined points per food item.
-The high score is updated if the current score exceeds it.
-Scores are displayed at the top of the screen.
-Game Over Conditions:
+### 🎨 Customization
+- Choose colors for:
+  - **Snake Head**
+  - **Snake Body**
+  - **Food**
+- Define the **points per food item** for tailored scoring.
 
-The game resets if the snake:
-Collides with the screen edges.
-Collides with its own body.
-Dynamic Updates:
+### 🖥️ Real-Time Score Tracking
+- **On-screen display:** Live updates of your **Score** and **High Score**.
 
-The gameplay speed decreases slightly with each food consumed, adding a layer of challenge.
-How to Run the Game
-Clone the repository:
+---
 
-bash
-Copy code
+## Setup Instructions
+
+### 1️⃣ Clone the Repository
+```bash
 git clone https://github.com/username/snake-game.git
-Install Python 3.x if not already installed.
+cd snake-game
+```
 
-Run the script:
-
-bash
-Copy code
+### 2️⃣ Run the Game
+Run the game using Python:
+```bash
 python snake_game.py
-Follow the prompts to customize your game:
+```
 
-Choose the snake head color, body color, and food color.
-Define how many points each food item should give.
-Play the game using the WASD keys.
+---
 
-Dependencies
-Python 3.x
-Turtle graphics (standard library)
-Future Improvements
-Add levels or obstacles for additional challenges.
-Implement a pause feature for gameplay.
-Save high scores between sessions.
-Feel free to fork, modify, and contribute to the project!
+## How to Play
 
+1. **Launch the game:** Upon start, choose the snake head color, body color, and food color.
+2. **Customize points:** Set how many points you earn per apple.
+3. **Control the snake:**
+   - **W**: Move Up
+   - **A**: Move Left
+   - **S**: Move Down
+   - **D**: Move Right
+4. **Objective:** Eat the food to grow your snake and increase your score.
+5. **Avoid:** Hitting walls or your own body to keep the game going.
 
+---
 
+## Future Enhancements
+- **Levels:** Add increasing difficulty with additional obstacles.
+- **Power-ups:** Introduce bonuses for special food items.
+- **Themes:** Provide predefined themes for colors and gameplay mechanics.
 
+---
 
+### Example Customization
+```text
+What color do you want the snake head to be?
+> green
 
+What color do you want the food to be?
+> red
+
+What color do you want the snake body to be?
+> blue
+
+How many points do you want per apple?
+> 10
+```
+
+---
